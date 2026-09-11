@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08080b">
+  <meta name="description" content="כל הקישורים של Yanivu במקום אחד">
+  <title>Yanivu | כל הקישורים</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; overflow-x: hidden; background: #08080b; color: #fff; font-family: Heebo, Arial, sans-serif; }
+    body::before, body::after { content: ""; position: fixed; width: 38rem; height: 38rem; border-radius: 50%; filter: blur(90px); opacity: .26; pointer-events: none; z-index: -1; }
+    body::before { background: #7c3aed; top: -17rem; right: -15rem; }
+    body::after { background: #06b6d4; bottom: -22rem; left: -18rem; }
+    main { width: min(100%, 520px); padding: 40px 22px 32px; text-align: center; }
+    .avatar { width: 106px; height: 106px; object-fit: cover; margin: 0 auto 18px; border-radius: 30px; display: block; box-shadow: 0 0 0 5px rgba(255,255,255,.07), 0 18px 42px rgba(82, 56, 217, .38); transform: rotate(-4deg); }
+    h1 { margin: 0; font-family: Montserrat, Heebo, sans-serif; font-size: clamp(34px, 8vw, 45px); letter-spacing: -2px; line-height: 1; }
+    .tagline { margin: 10px 0 31px; color: #a8a8b4; font-size: 17px; }
+    .links { display: grid; gap: 13px; }
+    .link { display: flex; align-items: center; min-height: 72px; padding: 11px 19px; border: 1px solid rgba(255,255,255,.13); border-radius: 18px; background: rgba(24,24,30,.72); color: #fff; text-decoration: none; box-shadow: 0 10px 30px rgba(0,0,0,.16); transition: transform .2s ease, border-color .2s ease, background .2s ease; }
+    .link:hover, .link:focus-visible { transform: translateY(-4px) scale(1.01); background: rgba(37,37,46,.95); border-color: rgba(255,255,255,.34); outline: none; }
+    .icon { flex: 0 0 47px; height: 47px; border-radius: 13px; display: grid; place-items: center; margin-left: 15px; font: 800 15px Montserrat, sans-serif; direction: ltr; }
+    .name { flex: 1; text-align: right; font-size: 20px; font-weight: 700; }
+    .arrow { color: #b9b9c3; font-size: 25px; line-height: 1; transform: rotate(180deg); }
+    .kick .icon { background: #53fc18; color: #111; font-size: 11px; } .youtube .icon { background: #ff0033; color: white; } .discord .icon { background: #5865f2; color: white; } .tiktok .icon { background: linear-gradient(135deg, #00f2ea 0 48%, #ff0050 49%); color: #090909; }
+    footer { margin-top: 27px; color: #70707d; font-size: 13px; letter-spacing: .2px; }
+    @media (max-width: 380px) { main { padding-top: 28px; } .link { min-height: 66px; } .name { font-size: 18px; } }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; } }
+  </style>
+</head>
+<body>
+  <main>
+    <img class="avatar" src="yanivu-logo.png" alt="הלוגו של Yanivu">
+    <h1>Yanivu</h1>
+    <p class="tagline">כל הלינקים שלי במקום אחד</p>
+    <nav class="links" aria-label="קישורים לרשתות של Yanivu">
+      <a class="link kick" href="https://kick.com/yanivu" target="_blank" rel="noopener noreferrer"><span class="icon">KICK</span><span class="name">קיק</span><span class="arrow">←</span></a>
+      <a class="link youtube" href="https://youtube.com/@yanivu938" target="_blank" rel="noopener noreferrer"><span class="icon">▶</span><span class="name">יוטיוב</span><span class="arrow">←</span></a>
+      <a class="link discord" href="https://discord.gg/YN8y3pzZJ7" target="_blank" rel="noopener noreferrer"><span class="icon">◉</span><span class="name">דיסקורד</span><span class="arrow">←</span></a>
+      <a class="link tiktok" href="https://tiktok.com/@yanivu938" target="_blank" rel="noopener noreferrer"><span class="icon">♪</span><span class="name">טיקטוק</span><span class="arrow">←</span></a>
+    </nav>
+    <footer>© 2026 Yanivu</footer>
+  </main>
+</body>
+</html>
